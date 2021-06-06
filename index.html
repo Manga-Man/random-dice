@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+<div id="base">
+ <h1 id="title">Dice</h1>
+  <script>
+    dice()
+   function dice() {
+    let rd = Math.floor(Math.random() * 6)
+    
+    if (rd === 1) {
+      document.write(`1`)
+      documnet.write("<img src='dice 1.png'>")
+    }
+    
+
+   }
+   
+  </script>
+</div>
+<style>
+  #base {
+    margin: 40px;
+    padding: 80px;
+    background-color: #4d4dff;
+    height: 340px;
+    width: 200px;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  * {
+    background-color: #00001a;
+    font-family: 'Share Tech', sans-serif;
+  }
+
+  #title {
+    background-color:  #4d4dff;
+    font-size: 40px;
+  }
+</style>
