@@ -6,12 +6,15 @@
  <p id="myImg"></p>
   <script>
     dice()
+    var dice1 = {
+      image: 'dice1.png'
+    }
    function dice() {
     let rd = Math.floor(Math.random() * 6)
     
     if (rd === 1) {
       document.write(`1`)
-      documnet.write(imgFile ('img123.jpg'))
+      document.write(dice1)
     }
     
 
