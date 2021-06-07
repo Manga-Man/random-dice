@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+<div id="base">
+ <h1 id="title">Dice</h1>
+ <p id="myImg"></p>
+ 
+  <script>
+    
+    dice()
+    var dice1 = {
+      image: 'dice1.png'
+    }
+   function dice(quote) {
+    let rd = Math.floor(Math.random() * 6 + 1)
+    
+   
+
+    if (rd === 1) {
+      document.write('<img src="dice1.png" id="dice">')
+      document.write("<br>");
+      document.write('<h1>1</h1>')
+      
+      
+    }
+   if (rd === 2) {
+     document.write('<img src="dice2.png" id="dice">')
+      document.write("<br>");
+      document.write('<h1>2</h1>')
+   } 
+
+   if (rd === 3) {
+      document.write('<img src="dice3.png" id="dice">')
+      document.write("<br>");
+      document.write('<h1>3</h1>')
+   }
+   if (rd === 4) {
+      document.write('<img src="dice4.png" id="dice">')
+      document.write("<br>");
+      document.write('<h1>4</h1>')
+   }
+   
+   if (rd === 5) {
+      document.write('<img src="dice5.png" id="dice">')
+      document.write("<br>");
+      document.write('<h1>5</h1>')
+   }
+
+   if (rd === 6) {
+      document.write('<img src="dice6.png" id="dice">')
+      document.write("<br>");
+      document.write('<h1>6</h1>')
+   }
+
+   if (rd === 0) {
+     document.write(dice())
+   }
+   }
+  
+  
+  </script>
+  
+</div>
+<style>
+  #base {
+    margin: 40px;
+    padding: 80px;
+    background-color: #4d4dff;
+    height: 340px;
+    width: 200px;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  * {
+    background-color: #00001a;
+    font-family: 'Share Tech', sans-serif;
+  }
+
+  #title {
+    background-color:  #4d4dff;
+    font-size: 40px;
+  }
+
+  h1 {
+    background-color: #4d4dff; 
+  }
+
+
+  #dice {
+    background-color: #4d4dff; 
+  }
+</style>
