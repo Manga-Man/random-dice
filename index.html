@@ -4,6 +4,7 @@
 <div id="base">
  <h1 id="title">Dice</h1>
  <p id="myImg"></p>
+ 
   <script>
     dice()
     var dice1 = {
@@ -30,7 +31,27 @@
       document.write("<br>");
       document.write('<h1>3</h1>')
    }
+   if (rd === 4) {
+      document.write('<img src="dice4.png" id="dice">')
+      document.write("<br>");
+      document.write('<h1>4</h1>')
+   }
+   
+   if (rd === 5) {
+      document.write('<img src="dice5.png" id="dice">')
+      document.write("<br>");
+      document.write('<h1>5</h1>')
+   }
 
+   if (rd === 6) {
+      document.write('<img src="dice6.png" id="dice">')
+      document.write("<br>");
+      document.write('<h1>6</h1>')
+   }
+
+   if (rd === 0) {
+     document.write(`please try again...`)
+   }
    }
    
   </script>
