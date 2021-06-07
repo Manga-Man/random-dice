@@ -8,10 +8,11 @@
   <script>
     
     dice()
+    
     var dice1 = {
       image: 'dice1.png'
     }
-   function dice(quote) {
+   function dice() {
     let rd = Math.floor(Math.random() * 6 + 1)
     
    
@@ -106,5 +107,26 @@
 
   button:hover {
     background-color: #3333ff;
+  }
+
+  img {
+    animation-name: spin;
+  animation-duration: 600ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
   }
 </style>
